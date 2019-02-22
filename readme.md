@@ -100,6 +100,7 @@
 2. 提取对应的'n.name'，整理成易读的形式返回，比如：感冒忌食的食物包括有：白扁豆；咸鱼；油条；猪油（板油）
 
 
-
+**运行的效果类似这样：**
+![运行效果图](https://github.com/geyixin/MedicalKG/blob/master/picture/run.png)
 
 感谢[liuhuanyong](https://github.com/liuhuanyong/QASystemOnMedicalK)的分享。
