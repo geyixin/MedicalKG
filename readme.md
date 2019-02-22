@@ -19,21 +19,21 @@
 
 前9项放在MongoDB的medical.data中，爬了5个小时，爬了4666条，显示如下：
 
-![img](C:/Users/geyixin/AppData/Local/YNote/data/qq41C47BF3A83D4A7EE0B7F77250F17ABA/8e3b9be84cd04464b92b308b2f8959be/2019-02-20_11-14-04.png)
+![img](https://github.com/geyixin/MedicalKG/blob/master/picture/medical_data.png)
 
 第10项放在MongoDB的medical.jc中，存储的常规检查的连接、名字以及介绍，爬了1个小时，爬了3660条：
 
-![img](C:/Users/geyixin/AppData/Local/YNote/data/qq41C47BF3A83D4A7EE0B7F77250F17ABA/0627756302e74f4e862c7af1237166ce/clipboard.png)
+![img](https://github.com/geyixin/MedicalKG/blob/master/picture/medical_jc.png)
 
 ## 1.2. 数据预处理
 
 - 爬取的数据简单处理成便于操作的形式：直接通过key即可实现索引。这样后面导成json格式的才方便neo4j使用。处理好的数据放在medical.medical中3371条。
 
-![img](C:/Users/geyixin/AppData/Local/YNote/data/qq41C47BF3A83D4A7EE0B7F77250F17ABA/21a66d4d4fcb48edb7d75d1b61b7d6da/2019-02-21_15-25-19.png)
+![img](https://github.com/geyixin/MedicalKG/blob/master/picture/medical_medical.png)
 
 **medical库中数据显示如下：**
 
-![img](C:/Users/geyixin/AppData/Local/YNote/data/qq41C47BF3A83D4A7EE0B7F77250F17ABA/546b0c94d2fd4797a23a0b1a4243a6ee/clipboard.png)
+![img](https://github.com/geyixin/MedicalKG/blob/master/picture/medical.png)
 
 **先将medical.medical数据从MongoDB导出，导成json格式：**
 
