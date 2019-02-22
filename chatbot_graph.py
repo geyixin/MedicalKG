@@ -15,11 +15,11 @@ class ChatBotGraph:
     def chat_main(self, sent):
         answer = '您好'
         res_classify = self.classifier.classify(sent)
-        print(res_classify)     # {'args': {'感冒': ['disease']}, 'question_types': ['disease_not_food']}
+        # print(res_classify)     # {'args': {'感冒': ['disease']}, 'question_types': ['disease_not_food']}
         if not res_classify:
             return answer
         res_sql = self.parser.parser_main(res_classify)
-        print(res_sql)  # [{'question_type': 'disease_not_food', 'sql': ["MATCH (m:Disease)-[r:no_eat]->(n:Food) where m.name = '感冒' return m.name, r.name, n.name"]}]
+        # print(res_sql)  # [{'question_type': 'disease_not_food', 'sql': ["MATCH (m:Disease)-[r:no_eat]->(n:Food) where m.name = '感冒' return m.name, r.name, n.name"]}]
         final_answers = self.searcher.search_main(res_sql)
         if not final_answers:
             return answer

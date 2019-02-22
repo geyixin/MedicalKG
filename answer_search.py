@@ -21,7 +21,7 @@ class AnswerSearcher:
             answers = []
             for query in queries:
                 ress = self.g.run(query).data()
-                print(ress)
+                # print(ress)
                 '''
                 [{'m.name': '感冒', 'r.name': '忌吃', 'n.name': '白扁豆'},
                  {'m.name': '感冒', 'r.name': '忌吃', 'n.name': '猪油（板油）'}, 

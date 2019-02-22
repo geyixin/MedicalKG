@@ -212,18 +212,18 @@ class QuestionClassifier:
         region_wds = []
         for i in self.region_tree.iter(question):   # 会把question中属于7个实体中的关键词找到
             wd = i[1][1]
-            print('i:::',i)
+            # print('i:::',i)
             region_wds.append(wd)
-        print('region_wds: ',region_wds)
+        # print('region_wds: ',region_wds)
         stop_wds = []
         for wd1 in region_wds:
             for wd2 in region_wds:
                 if wd1 in wd2 and wd1 != wd2:
                     stop_wds.append(wd1)
         final_wds = [i for i in region_wds if i not in stop_wds]
-        print('final_wds:',final_wds)
+        # print('final_wds:',final_wds)
         final_dict = {i:self.wdtype_dict.get(i) for i in final_wds}
-        print('final_dict:',final_dict)
+        # print('final_dict:',final_dict)
 
         return final_dict
 
