@@ -107,4 +107,4 @@
 
 
 
-[感谢liuhuanyong的分享](https://github.com/liuhuanyong/QASystemOnMedicalK)
+感谢liuhuanyong的分享 https://github.com/liuhuanyong/QASystemOnMedicalK 。
