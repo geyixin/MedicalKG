@@ -49,7 +49,8 @@
 
 - ```python
   from py2neo import Node self.g = Graph(host="127.0.0.1",http_port=7474,user="neo4j", password="123456") 
-  node = Node("Disease", name=disease_dict['name'], desc=disease_dict['desc'], prevent=disease_dict['prevent'] ,cause=disease_dict['cause'],easy_get=disease_dict['easy_get'],cure_lasttime=disease_dict['cure_lasttime'],             cure_department=disease_dict['cure_department'], cure_way=disease_dict['cure_way'] , cured_prob=disease_dict['cured_prob']) self.g.create(node) 
+  node = Node("Disease", name=disease_dict['name'], desc=disease_dict['desc'], prevent=disease_dict['prevent'] ,cause=disease_dict['cause'],easy_get=disease_dict['easy_get'],cure_lasttime=disease_dict['cure_lasttime'],             cure_department=disease_dict['cure_department'], cure_way=disease_dict['cure_way'] , cured_prob=disease_dict['cured_prob'])
+  self.g.create(node) 
   ```
 
 - 其余6个实体属性：name。对应标签依次为：：Drug、Food、Check、Department、Producer、Symptom
