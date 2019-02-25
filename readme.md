@@ -64,7 +64,8 @@
 
 - ```python
   # 写一个CQL语句去创建实体间的关系 
-  query = "match(p:%s),(q:%s) where p.name='%s'and q.name='%s' create (p)-[rel:%s{name:'%s'}]->(q)" % (start_node, end_node, p, q, rel_type, rel_name) self.g.run(query) 
+  query = "match(p:%s),(q:%s) where p.name='%s'and q.name='%s' create (p)-[rel:%s{name:'%s'}]->(q)" % (start_node, end_node, p, q, rel_type, rel_name)
+  self.g.run(query) 
   ```
 
   注意：**3. 自动问答** **运行之前要保证neo4j处于已连接状态！**
