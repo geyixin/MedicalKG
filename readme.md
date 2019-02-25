@@ -103,4 +103,4 @@
 **运行的效果类似这样：**
 ![运行效果图](https://github.com/geyixin/MedicalKG/blob/master/picture/run.png)
 
-感谢[liuhuanyong](https://github.com/liuhuanyong/QASystemOnMedicalK)的分享。
+本项目借鉴和学习了[liuhuanyong](https://github.com/liuhuanyong/QASystemOnMedicalK)大佬的一个知识图谱项目。
