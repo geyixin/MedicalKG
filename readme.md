@@ -104,5 +104,3 @@
 
 **运行的效果类似这样：**
 ![运行效果图](https://github.com/geyixin/MedicalKG/blob/master/picture/run.png)
-
-本项目借鉴和学习了liuhuanyong大佬的一个知识图谱项目，感谢分享。
